@@ -1,7 +1,8 @@
 import * as faker from 'faker';
+import { describe, expect, it } from '@jest/globals';
 import { getUser, getUsers, updateUser } from './reqresUserGateway';
 
-describe('getDynamoEndpoints', () => {
+describe('User persistence', () => {
   it('getUsers', async () => {
     const results = await getUsers();
     expect(results.length).toBe(6);

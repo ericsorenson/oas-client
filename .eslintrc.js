@@ -12,10 +12,6 @@ module.exports = {
     'plugin:prettier/recommended',
     'plugin:react/recommended',
   ],
-  globals: {
-    Cypress: true,
-    cy: true,
-  },
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {

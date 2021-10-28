@@ -1,3 +1,4 @@
-node_modules
-dist
 .DS_Store
+dist
+e2e/videos
+node_modules
