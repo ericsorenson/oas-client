@@ -25,3 +25,4 @@ jobs:
         with:
           start: npm start
           wait-on: 'http://localhost:1234'
+          command: npm run cypress
