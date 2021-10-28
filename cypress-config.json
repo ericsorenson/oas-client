@@ -1,0 +1,18 @@
+{
+  "baseUrl": "http://localhost:1234",
+  "browser": "chrome",
+  "reporter": "spec",
+  "reporterOptions": {
+    "toConsole": true
+  },
+  "fixturesFolder": "e2e",
+  "integrationFolder": "e2e",
+  "screenshotsFolder": "e2e/screenshots",
+  "videosFolder": "e2e/videos",
+  "defaultCommandTimeout": 20000,
+  "requestTimeout": 12000,
+  "viewportWidth": 1200,
+  "viewportHeight": 900,
+  "retries": 3,
+  "testFiles": "*.spec.js"
+}

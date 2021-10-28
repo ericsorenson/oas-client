@@ -7,10 +7,15 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
+    'plugin:cypress/recommended',
     'plugin:jest/recommended',
     'plugin:prettier/recommended',
     'plugin:react/recommended',
   ],
+  globals: {
+    Cypress: true,
+    cy: true,
+  },
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
@@ -20,6 +25,7 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: [
+    'cypress',
     '@typescript-eslint',
     'jest',
     'prettier',
@@ -29,6 +35,7 @@ module.exports = {
     'sort-keys-fix',
   ],
   rules: {
+    'jest/expect-expect': 'off',
     'prettier/prettier': 'error',
     'sort-destructure-keys/sort-destructure-keys': [
       'error',
