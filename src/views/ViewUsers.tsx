@@ -36,7 +36,7 @@ const ViewUsers = () => {
                 <tr key={user.id}>
                   <td>{user.id}</td>
                   <td>
-                    <img src={user.avatar} />
+                    <img src={user.avatar} alt="Profile Picture" />
                   </td>
                   <td>{user.first_name}</td>
                   <td>{user.last_name}</td>

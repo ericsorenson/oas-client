@@ -1,0 +1,10 @@
+{
+  "actions" : {
+    "run" : {
+      "enabled" : true,
+      "script" : "npm start"
+    }
+  },
+  "identifier" : "AE96342F-B952-434B-9308-DD13B52F61F4",
+  "openLogOnRun" : "success"
+}

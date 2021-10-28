@@ -4,7 +4,8 @@
   "description": "OAS Client",
   "scripts": {
     "build": "webpack --config webpack.config.js",
-    "cypress": "cypress run --config-file cypress-config.json",
+    "cypress": "cypress run --config-file cypress.config.json",
+    "pa11y": "pa11y-ci --config ./pa11y.config.js",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx src/**",
     "lint:fix": "eslint --ext .js,.jsx,.ts,.tsx src/** --fix",
     "start": "webpack serve --config webpack.config.js",
@@ -47,6 +48,7 @@
     "html-webpack-pug-plugin": "^3.0.0",
     "jest": "^27.3.1",
     "lodash": "^4.17.21",
+    "pa11y-ci": "^2.4.2",
     "prettier": "^2.4.1",
     "pug": "^3.0.2",
     "pug-loader": "^2.4.0",

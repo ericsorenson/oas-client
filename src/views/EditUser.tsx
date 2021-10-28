@@ -37,7 +37,7 @@ const EditUser: React.FC = () => {
         <>
           <h1>Edit User</h1>
           <p>
-            <img src={user.avatar} />
+            <img src={user.avatar} alt="Profile Picture" />
           </p>
           <p>
             {user.first_name} {user.last_name}
@@ -50,9 +50,11 @@ const EditUser: React.FC = () => {
           >
             <Form>
               <p>
+                <label htmlFor="first_name">First Name</label>
                 <Field id="first_name" name="first_name" type="text" />
               </p>
               <p>
+                <label htmlFor="last_name">Last Name</label>
                 <Field id="last_name" name="last_name" type="text" />
               </p>
               <button type="submit">Submit</button>
