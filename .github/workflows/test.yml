@@ -20,7 +20,8 @@ jobs:
         run: npm run test
       - name: ESLint
         run: npm run lint
-      - name: Cypress e2e
-        run: npm run cypress
-          with: 
-            start: npm start
+      - name: Cypress run
+        uses: cypress-io/github-action@v2
+        with:
+          start: npm start
+          wait-on: 'http://localhost:1234'
