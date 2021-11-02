@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import { User } from '../types/User';
 import { getUsers } from '../gateways/reqresUserGateway';
 import React, { useEffect, useState } from 'react';
 
