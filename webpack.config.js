@@ -10,8 +10,9 @@ module.exports = {
     port: 1234,
   },
   entry: {
-    index: './src/views/app.tsx',
+    index: './src/components/OvermindReactBootstrap.tsx',
   },
+  // mode: 'production',
   mode: 'development',
   module: {
     rules: [
@@ -29,6 +30,10 @@ module.exports = {
         test: /\.pug$/i,
         use: ['pug-loader'],
       },
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader', 'postcss-loader'],
+      },
     ],
   },
   output: {
@@ -41,7 +46,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       minify: false,
       publicPath: '/',
-      template: './src/views/index.pug',
+      template: './src/index.pug',
     }),
   ],
   resolve: { extensions: ['.js', '.jsx', '.ts', '.tsx'] },
