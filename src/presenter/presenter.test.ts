@@ -1,10 +1,10 @@
 import { describe, expect, it } from '@jest/globals';
-import { getUsersThunk, store } from './presenter';
+import { overmindApp } from './presenter';
 
 describe('Presenter', () => {
   it('getUsers', async () => {
-    expect(store.getState().users.userList.length).toBe(0);
-    await store.dispatch(getUsersThunk());
-    expect(store.getState().users.userList.length).toBe(6);
+    expect(overmindApp.state.userList.length).toBe(0);
+    await overmindApp.actions.displayUserList();
+    expect(overmindApp.state.userList.length).toBe(6);
   });
 });

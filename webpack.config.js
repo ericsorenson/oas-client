@@ -10,10 +10,10 @@ module.exports = {
     port: 1234,
   },
   entry: {
-    index: './src/components/OvermindReactBootstrap.tsx',
+    index: './src/App.tsx',
   },
-  // mode: 'production',
-  mode: 'development',
+  mode: 'production',
+  // mode: 'development',
   module: {
     rules: [
       {
