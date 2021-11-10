@@ -12,8 +12,7 @@ module.exports = {
   entry: {
     index: './src/App.tsx',
   },
-  mode: 'production',
-  // mode: 'development',
+  mode: 'development',
   module: {
     rules: [
       {

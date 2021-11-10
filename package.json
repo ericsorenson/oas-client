@@ -9,6 +9,8 @@
     "lint": "eslint --ext .js,.jsx,.ts,.tsx src/",
     "lint:fix": "eslint --ext .js,.jsx,.ts,.tsx src/ --fix",
     "start": "NODE_ENV=production webpack serve --config webpack.config.js",
+    "start:users": "NODE_ENV=production webpack serve --config webpack.users.config.js",
+    "start:catfacts": "NODE_ENV=production webpack serve --config webpack.catfacts.config.js",
     "test": "jest --config jest.config.js src/"
   },
   "author": "Eric Sorenson",
