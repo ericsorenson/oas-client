@@ -1,4 +1,4 @@
-import { UserCollectionTemplate } from '../templates/UserCollectionTemplate';
+import { UserCollectionTemplate } from '../views/UserCollectionTemplate';
 import { useAppState } from '../presenter/presenter';
 
 const UserCollection = () => {

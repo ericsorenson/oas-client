@@ -21,8 +21,8 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: [
-    'cypress',
     '@typescript-eslint',
+    'cypress',
     'jest',
     'prettier',
     'react',
@@ -31,6 +31,7 @@ module.exports = {
     'sort-keys-fix',
   ],
   rules: {
+    '@typescript-eslint/no-var-requires': 'off',
     'jest/expect-expect': 'off',
     'prettier/prettier': 'error',
     'sort-destructure-keys/sort-destructure-keys': [

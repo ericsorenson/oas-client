@@ -14,7 +14,7 @@ export const NavBar = () => {
   return (
     <>
       <div className="min-h-full">
-        <Disclosure as="nav" className="bg-gray-800">
+        <Disclosure as="nav" className="bg-primary-800">
           {({ open }) => (
             <>
               <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -35,8 +35,8 @@ export const NavBar = () => {
                             href={item.href}
                             className={classNames(
                               item.current
-                                ? 'bg-gray-900 text-white'
-                                : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                                ? 'bg-primary-900 text-white'
+                                : 'text-primary-300 hover:bg-primary-700 hover:text-white',
                               'px-3 py-2 rounded-md text-sm font-medium',
                             )}
                             aria-current={item.current ? 'page' : undefined}
@@ -51,7 +51,7 @@ export const NavBar = () => {
                     <div className="ml-4 flex items-center md:ml-6">
                       <button
                         type="button"
-                        className="bg-gray-800 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                        className="bg-primary-800 p-1 rounded-full text-primary-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-primary-800 focus:ring-white"
                       >
                         <span className="sr-only">View notifications</span>
                         <BellIcon className="h-6 w-6" aria-hidden="true" />
@@ -60,7 +60,7 @@ export const NavBar = () => {
                       {/* Profile dropdown */}
                       <Menu as="div" className="ml-3 relative">
                         <div>
-                          <Menu.Button className="max-w-xs bg-gray-800 rounded-full flex items-center text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
+                          <Menu.Button className="max-w-xs bg-primary-800 rounded-full flex items-center text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-primary-800 focus:ring-white">
                             <span className="sr-only">Open user menu</span>
                             <img
                               className="h-8 w-8 rounded-full"
@@ -85,8 +85,8 @@ export const NavBar = () => {
                                   <a
                                     href={item.href}
                                     className={classNames(
-                                      active ? 'bg-gray-100' : '',
-                                      'block px-4 py-2 text-sm text-gray-700',
+                                      active ? 'bg-primary-100' : '',
+                                      'block px-4 py-2 text-sm text-primary-700',
                                     )}
                                   >
                                     {item.name}
@@ -101,7 +101,7 @@ export const NavBar = () => {
                   </div>
                   <div className="-mr-2 flex md:hidden">
                     {/* Mobile menu button */}
-                    <Disclosure.Button className="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
+                    <Disclosure.Button className="bg-primary-800 inline-flex items-center justify-center p-2 rounded-md text-primary-400 hover:text-white hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-primary-800 focus:ring-white">
                       <span className="sr-only">Open main menu</span>
                       {open ? (
                         <XIcon className="block h-6 w-6" aria-hidden="true" />
@@ -125,8 +125,8 @@ export const NavBar = () => {
                       href={item.href}
                       className={classNames(
                         item.current
-                          ? 'bg-gray-900 text-white'
-                          : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                          ? 'bg-primary-900 text-white'
+                          : 'text-primary-300 hover:bg-primary-700 hover:text-white',
                         'block px-3 py-2 rounded-md text-base font-medium',
                       )}
                       aria-current={item.current ? 'page' : undefined}
@@ -135,7 +135,7 @@ export const NavBar = () => {
                     </Disclosure.Button>
                   ))}
                 </div>
-                <div className="pt-4 pb-3 border-t border-gray-700">
+                <div className="pt-4 pb-3 border-t border-primary-700">
                   <div className="flex items-center px-5">
                     <div className="flex-shrink-0">
                       <img
@@ -148,13 +148,13 @@ export const NavBar = () => {
                       <div className="text-base font-medium leading-none text-white">
                         {authenticatedUser.first_name}
                       </div>
-                      <div className="text-sm font-medium leading-none text-gray-400">
+                      <div className="text-sm font-medium leading-none text-primary-400">
                         {authenticatedUser.last_name}
                       </div>
                     </div>
                     <button
                       type="button"
-                      className="ml-auto bg-gray-800 flex-shrink-0 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                      className="ml-auto bg-primary-800 flex-shrink-0 p-1 rounded-full text-primary-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-primary-800 focus:ring-white"
                     >
                       <span className="sr-only">View notifications</span>
                       <BellIcon className="h-6 w-6" aria-hidden="true" />
@@ -166,7 +166,7 @@ export const NavBar = () => {
                         key={item.name}
                         as="a"
                         href={item.href}
-                        className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700"
+                        className="block px-3 py-2 rounded-md text-base font-medium text-primary-400 hover:text-white hover:bg-primary-700"
                       >
                         {item.name}
                       </Disclosure.Button>
