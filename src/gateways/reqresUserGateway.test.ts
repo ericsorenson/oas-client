@@ -1,5 +1,5 @@
-import { faker } from '@faker-js/faker';
 import { describe, expect, it } from '@jest/globals';
+import { faker } from '@faker-js/faker';
 import { getUser, getUsers, updateUser } from './reqresUserGateway';
 
 describe('User persistence', () => {

@@ -1,4 +1,6 @@
 {
+  "apexskier.eslint.config.eslintConfigPath" : ".eslintrc.js",
+  "apexskier.eslint.config.eslintPath" : "\/Users\/ericsorenson\/workspace\/oas-client\/node_modules\/.bin\/eslint",
   "index.ignored_file_patterns" : [
     "node_modules\/*"
   ],
