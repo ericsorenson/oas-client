@@ -1,4 +1,4 @@
-import * as faker from 'faker';
+import { faker } from '@faker-js/faker';
 import { describe, expect, it } from '@jest/globals';
 import { getUser, getUsers, updateUser } from './reqresUserGateway';
 

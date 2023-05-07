@@ -25,9 +25,9 @@ export const state: State = {
   catFact: '',
   currentPage: 'Dashboard',
   menuBarLinks: [
-    { href: 'http://localhost:2345/', name: 'Dashboard' },
-    { href: 'http://localhost:2345/users', name: 'Users' },
-    { href: 'http://localhost:3456/cat-fact', name: 'Cat Fact' },
+    { href: 'http://localhost:1234/', name: 'Dashboard' },
+    { href: 'http://localhost:1234/users', name: 'Users' },
+    { href: 'http://localhost:1234/cat-fact', name: 'Cat Fact' },
   ],
   profileMenuLinks: [
     { href: '#', name: 'Your Profile' },
